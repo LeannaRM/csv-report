@@ -1,0 +1,187 @@
+body {
+    background-color: lightblue;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("http://cdn.wallpapersafari.com/23/13/xHVrKT.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size:40pt;
+    text-align: center;
+}
+
+.welcome {
+    padding-top: 20px;
+    font-size:50pt;
+}
+
+.page--title {
+    font-size:30pt;
+}
+
+.header--title {
+    font-family: 'Anton', sans-serif;
+    text-align: left;
+    display: inline;
+    font-size: 30pt;
+    color: #157f1e;
+    text-shadow: 0px 1px 1px #666;
+}
+
+.header--buttons {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10pt;
+    color: #FFF;
+    padding: 6px 17px 6px 17px;
+    border: 1px solid #999;
+    text-shadow: 0px 1px 1px #666;
+    text-decoration: none;
+    box-shadow: 0 1px 3px #111;
+    border-radius: 3px;
+    background: #157f1e;
+    cursor: pointer;
+}
+
+.headerbuttons--container {
+    float:right;
+}
+.header--container{
+    /*background-color:#157f1e;*/
+}
+.headerform--buttons {
+    display: inline;
+}
+
+.logoutbutton {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10pt;
+    color: #FFF;
+    padding: 6px 17px 6px 17px;
+    border: 1px solid #999;
+    text-shadow: 0px 1px 1px #666;
+    text-decoration: none;
+    box-shadow: 0 1px 3px #111;
+    border-radius: 3px;
+    background: #157f1e;
+    cursor: pointer;
+}
+
+
+
+p, h3{
+    font-size: 15pt;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+table, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 12pt;
+    font-family: Arial;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 12pt;
+    font-family: Arial;
+}
+
+.loginsubmit{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15pt;
+    color: #FFF;
+    padding: 4px 30px 4px 30px;
+    border: 1px solid #999;
+    text-shadow: 0px 1px 1px #666;
+    text-decoration: none;
+    box-shadow: 0 1px 3px #111;
+    border-radius: 4px;
+    background: #157f1e;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.loginsubmit:hover .header--buttons:hover{
+    border: 1px solid #FFF;
+}
+
+.login-container{
+    margin:  60px;
+}
+
+.submit--remove {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10pt;
+    color: #FFF;
+    padding: 3px 20px 3px 20px;
+    border: 1px solid #999;
+    text-shadow: 0px 1px 1px #666;
+    text-decoration: none;
+    box-shadow: 0 1px 3px #111;
+    border-radius: 4px;
+    background: #157f1e;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.remove--container {
+    display:inline-block;
+    position:absolute;
+    left: 10px;
+    top: 130px;
+    border: 3px solid #157f1e;
+    padding: 6px;
+    background-color:rgba(255,255,255,0.5);
+    width: 220px;
+}
+
+.edit--container {
+    display:inline-block;
+    position:absolute;
+    left: 10px;
+    top: 350px;
+    border: 3px solid #157f1e;
+    padding: 6px;
+    background-color:rgba(255,255,255,0.5);
+    width: 220px;
+}
+
+.add--container {
+    display:inline-block;
+    position:absolute;
+    right: 10px;
+    top: 130px;
+    border: 3px solid #157f1e;
+    padding: 6px;
+    padding-bottom: 50px;
+    background-color:rgba(255,255,255,0.5);
+    width: 250px;
+}
+
+.submit--add {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10pt;
+    color: #FFF;
+    padding: 3px 20px 3px 20px;
+    border: 1px solid #999;
+    text-shadow: 0px 1px 1px #666;
+    text-decoration: none;
+    box-shadow: 0 1px 3px #111;
+    border-radius: 4px;
+    background: #157f1e;
+    cursor: pointer;
+    margin-top: 5px;
+    display:inline-block;
+    position:absolute;
+    right: 80px;
+}

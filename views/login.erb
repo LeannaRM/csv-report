@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway" rel="stylesheet">
+	<title>Account Login Page</title>
+</head>
+<body class="loginpage">
+
+	<h1 class="welcome">Welcome to Accounts Management</h1> 
+	<div class="login-container">
+		<% if @user %>
+			<h3>The user <%= @user %> is already logged in.</h3>
+			<p><a href="/index">Click here</a> to return to the admin menu.</p>
+		<% else %>
+			<h3>Please login below:</h3>
+			<form action="/login" method="post" class="form--login">
+				<p>Username: <input type="text" name="username"></p>
+				<p>Password: <input type="text" name="password"></p>
+				<p><input type="submit" class="loginsubmit"></p>
+			</form>
+		<% end %>
+	</div>
+</body>
+</html>

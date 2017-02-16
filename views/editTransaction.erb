@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<title>Add transaction</title>
+</head>
+<body>
+
+	<div class="header--container"> 
+		<h1 class="header--title">Accounts Management</h1>
+		<div class="headerbuttons--container">
+			<form action="/index" class="headerform--buttons"><input type="submit" value="Main Menu" class="header--buttons"></form>
+			<form action="/summary" class="headerform--buttons"><input type="submit" value="Account Summary" class="header--buttons"></form>
+			<form action="/details" class="headerform--buttons"><input type="submit" value="Account Details" class="header--buttons"></form>
+			<form action="/editTransaction" class="headerform--buttons"><input type="submit" value="Add New Transaction" class="header--buttons"></form>
+			<form action="/logout" method="post" class="headerform--buttons"><input type="submit" value="Logout" class="header--buttons"></form>
+			</div>
+	</div>
+
+
+
+	<h3>Account Details for <%= @name %></h3>
+
+	<table>
+	<thead>
+		<tr>
+			<th>T#</th>
+			<th>Account</th>
+			<th>Date</th>
+			<th>Payee</th>
+			<th>Category</th>
+			<th>Outflow</th>
+			<th>Inflow</th>
+		</tr>
+	</thead>
+	<% count = 0 %>
+	<% @transactions.each do |row| %>
+		<% count = count + 1 %>
+		<tr>
+			<td><%= count.to_s + ": " %></td>
+			<% currentRow = row.split(",")
+			currentRow.each do |x| %>
+				<td><%= x %> </td>
+			<% end %>
+		</tr>
+	<% end %>
+	</table>
+
+	<div class="remove--container">
+		<p>Enter a line (T#) to remove:</p>
+		<form action="/removeTransaction" method="post">
+			<p><input type="number" name="row_to_remove"></p>
+			<p><input type="submit" class="submit--remove"></p>
+		</form>
+	</div>
+
+	<div class="edit--container">
+		<p>Enter a line (T#) to edit:</p>
+		<form action="/editcsv" method="post">
+			<p><input type="number" name="row_to_edit"></p>
+		</form>
+	</div>
+
+	<div class="add--container">
+		<p>Add new information to an account:</p>
+		<form action="/addTransaction" method="post">
+			<p>Date: <input type="text" name="Date"></p>
+			<p>Payee: <input type="text" name="Payee"></p>
+			<p>Category: <input type="text" name="Category"></p>
+			<p>Inflow: <input type="text" name="Inflow"></p>
+			<p>Outflow: <input type="text" name="Outflow"></p>
+
+			<input type="Submit" class="submit--add">
+		</form>
+	</div>
+
+</body>
+</html>

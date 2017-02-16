@@ -1,0 +1,66 @@
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Dancing Script', cursive;*/
+
+h1{
+	padding-top: 30px;
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-size:40pt;
+	text-align: center;
+}
+
+body {
+	background-color: lightblue;
+	font-family: 'Raleway', sans-serif;
+}
+
+.loginpage{
+	background-image: url("http://cdn.wallpapersafari.com/23/13/xHVrKT.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+p, h3{
+	font-size: 15pt;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+table, th {
+	border: 2px solid black;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 12pt;
+	font-family: Arial;
+}
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 12pt;
+	font-family: Arial;
+}
+
+.loginsubmit{
+	font-family: 'Raleway', sans-serif;
+	font-size: 15pt;
+    color: #FFF;
+    padding: 4px 30px 4px 30px;
+    border: 1px solid #999;
+    text-shadow: 0px 1px 1px #666;
+    text-decoration: none;
+    box-shadow: 0 1px 3px #111;
+    border-radius: 4px;
+    background: #157f1e;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.loginsubmit:hover {
+    border: 1px solid #FFF;
+}
+
+.login-container{
+	margin:  60px;
+}

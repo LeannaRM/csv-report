@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway" rel="stylesheet">
+	<title>Main Account Page</title>
+</head>
+<body>
+
+	<h1>Welcome <%= @name %>!</h1>
+
+	<p>Select an account to view or option below:</p>
+	<select onChange="window.location.href=this.value">
+		<option value="/" selected="selected">Main Menu</option>
+		<option value="/summary?name=<%=@name%>">Account Summary</option>
+		<option value="/details">Account Details</option>
+		<option value="/addTransaction">Add New Transaction</option>
+	</select>
+
+<p><form action="/logout" method="post"><input type="submit" value="Logout"></form></p>
+
+</body>
+</html>

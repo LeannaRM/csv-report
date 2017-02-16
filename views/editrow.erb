@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+
+	<% editrow = @rows.values_at(@row_to_edit).shift
+		newArray = editrow.split(",") %>
+
+	<table>
+		<tr>
+			<td><strong>Account:</strong></td>
+			<td><%= newArray[0] %></td>
+		</tr>
+		<tr>
+			<td><strong>Date:</strong></td>
+			<td><%= newArray[1] %></td>
+		</tr>
+		<tr>
+			<td><strong>Payee:</strong></td>
+			<td><%= newArray[2] %></td>
+		</tr>
+		<tr>
+			<td><strong>Category:</strong></td>
+			<td><%= newArray[3] %></td>
+		</tr>
+		<tr>
+			<td><strong>Outflow:</strong></td>
+			<td><%= newArray[4] %></td>
+		</tr>
+		<tr>
+			<td><strong>Inflow:</strong></td>
+			<td><%= newArray[5] %></td>
+		</tr>
+	</table>
+
+	<form action="/editrow" method="post">
+		<select name="x">
+			<option value="0">Account</option>
+			<option value="1">Date</option>
+			<option value="2">Payee</option>
+			<option value="3">Category</option>
+			<option value="4">Outflow</option>
+			<option value="5">Inflow</option>
+		</select>
+		<p><input type="text" name="info_to_edit"></p>
+		<p><input type="submit"></p>
+	</form>
+
+</body>
+</html>
